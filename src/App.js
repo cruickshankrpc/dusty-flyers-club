@@ -1,17 +1,26 @@
 import "./App.scss";
 import bgPic from "./images/bg-pic.jpg";
+import image1 from "./images/image1.jpeg";
 import logo from "./images/DFC-logo.png";
+import compressedLogo from "./images/compressed-logo.png";
 import instagramIcon from "./images/instagram.png";
 import emailIcon from "./images/email.png";
 import facebookIcon from "./images/facebook.png";
+
+// lazy load images
+// optimise font load
 
 function App() {
   return (
     <div className="App">
       <div>
-        <img src={bgPic} alt="bg" className="bg-img" />
+        <img src={image1} alt="bg" className="bg-img" />
         <div className="content">
-          <img className="logo" alt="Dusty Flyers' Logo" src={logo}></img>
+          <img
+            className="logo"
+            alt="Dusty Flyers' Logo"
+            src={compressedLogo}
+          ></img>
           <h2 className="chantal-font">The ride of your life, guaranteed</h2>
           <div className="icon-container">
             <a
